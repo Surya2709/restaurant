@@ -5,13 +5,13 @@
   font-family: 'Nerko One', cursive;
 }
 :root {
-  --colour-one: #ffd1b7;
-  --colour-two: #fee4d4;
-  --colour-three: #fdb493;
-  --colour-four: #fb966f;
-  --colour-five: #f45f34;
-  --colour-six: #302825;
-  --colour-seven: #a69f9c;
+  --colour-one: #5bf5c1;
+  --colour-two: #7affd3;
+  --colour-three: #56d69f;
+  --colour-four: #1bc48c;
+  --colour-five: #05a872;
+  --colour-six: #162b24;
+  --colour-seven: #63b89b;
   --colour-eight: #707e8d;
 }
 
@@ -29,7 +29,7 @@ body {
   background: var(--colour-one);
   height: 400px;
   width: 700px;
-  box-shadow: 10px 10px 6px 2px rgba(251,150,111,0.6);
+  box-shadow: 10px 10px 6px 2px rgba(5, 168, 114,0.6);
   overflow: hidden;
 }
 .details {
@@ -59,18 +59,27 @@ body {
 }
 .wrap:nth-child(3) {
   position: absolute;
-  top: 68%;
+  top: 75%;
   left: 20%;
   font-size: 15px;
   margin: 12px;
 }
+
+.wrap:nth-child(4) {
+    position: absolute;
+    top: 68%;
+    left: 22%;
+    font-size: 15px;
+    margin: 12px;
+  }
+
 .input {
   border: 1px solid var(--colour-three);
   padding: 5px 20px;
   margin: 5px;
   border-radius: 5px;
   background: none;
-  box-shadow: inset 10px 10px 6px -5px rgba(255,209,183,1);
+  box-shadow: inset 10px 10px 6px -5px rgba(26, 176, 126,1);
 }
 label {
   color: var(--colour-eight);
@@ -80,22 +89,24 @@ label {
   background: var(--colour-six);
   position: absolute;
   width: 80px;
-  top: 70%;
+  top: 76%;
   right: 10%;
   padding: 5px;
   font-color: var(--colour-one);
   border-radius: 10px;
   border: none;
+  color: white;
 }
 .button .sign {
   color: #fff;
   font-size: 15px;
 }
-.fox {
+.kitchen-logo {
   position: absolute;
-  top: 25%;
-  left: 55%;
-  height: 18%;
+  width: 170px;
+  top: 5%;
+  left: 63%;
+  height: 35%;
 }
 .back {
   position: absolute;
@@ -137,4 +148,10 @@ h3 {
   font-size: 14px;
   color: var(--colour-five);
   padding: 5px;
+}
+
+.error{
+
+    color: red;
+    
 }
