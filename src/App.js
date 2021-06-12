@@ -1,22 +1,27 @@
 import React from 'react';
 import "./App.css";
-import styled from "styled-components";
-import { AccountBox } from "./components/accountBox";
 
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Reports from './pages/Reports';
+import Products from './pages/Products';
+import Login from './pages/login';
+
+
 
 function App() {
   return (
-    <AppContainer>
-      <AccountBox />
-    </AppContainer>
+    
+      <Router>
+        <Switch>
+          <Route path='/' exact component={Login} />
+          <Route path='/home' component={Home} />
+          <Route path='/reports' component={Reports} />
+          <Route path='/products' component={Products} />
+          
+        </Switch>
+      </Router>
+   
   );
 }
 

@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from "../../src/components/Navbar"
+
 
 function Products() {
   return (
-    <div className='products'>
+    <div>
+    <Navbar/>
+    
       <h1>Products</h1>
     </div>
   );
