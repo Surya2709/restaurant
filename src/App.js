@@ -2,6 +2,8 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Login from './pages/login';
 import Dashboard from './pages/Dashboard';
+import PublicRoute from './pages/PublicRoutes';
+import PrivateRoute from './pages/PrivateRoutes';
 
 function App() {
   return (
@@ -10,8 +12,8 @@ function App() {
         
         <div className="content">
           <Switch>
-            <Route  exact path="/" component={Login}  />
-            <Route  exact path="/dashboard" component={Dashboard}  />           
+            <PublicRoute  exact path="/" component={Login}  />       
+            <PrivateRoute  exact path="/dashboard" component={Dashboard}  />           
           </Switch>
         </div>
       </BrowserRouter>
